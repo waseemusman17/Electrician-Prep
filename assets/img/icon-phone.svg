@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group_77" data-name="Group 77" transform="translate(-120.197 -10.197)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(120.197 10.197)" fill="#fff"/>
+    <path id="Icon_material-call" data-name="Icon material-call" d="M6.228,8.217a7.229,7.229,0,0,0,3.145,3.145l1.05-1.05a.474.474,0,0,1,.487-.115,5.444,5.444,0,0,0,1.7.272.479.479,0,0,1,.477.477v1.665a.479.479,0,0,1-.477.477A8.112,8.112,0,0,1,4.5,4.977.479.479,0,0,1,4.977,4.5h1.67a.479.479,0,0,1,.477.477,5.421,5.421,0,0,0,.272,1.7.479.479,0,0,1-.119.487l-1.05,1.05Z" transform="translate(121.697 11.697)" fill="#560000"/>
+  </g>
+</svg>
