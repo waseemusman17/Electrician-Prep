@@ -62,6 +62,7 @@ p{
 .container{
     max-width: 1140px;
     margin: auto;
+    padding: 0px 15px;
 }
 
 
@@ -182,7 +183,7 @@ p{
     justify-content: space-between;
     align-items: center;
     max-width: 380px;
-    margin: auto;
+    margin: 40px auto 0px;
 }
 .hbp-learn-btn {
     display: flex;
@@ -265,18 +266,25 @@ p{
     justify-content: center;
     align-items: center;
     background-color: #A01230;
+    border: 1px solid #A01230;
     color: #fff;
-    margin: 40px auto;
+    margin: 40px auto 0px;
     font-family: 'Sarabun', sans-serif;
     font-weight: bold;
 }
-
+.red-shop-btn:hover{
+    background-color: transparent;
+    color: #A01230;
+}
 
 
 /* Product Slider Section (PSS) */
 
 .pss-section{
     width: 100%;
+}
+.pss-content{
+    position: relative;
 }
 .pss-section h3 {
     text-align: center;
@@ -300,7 +308,7 @@ p{
     color: #B1AFAF;
     padding: 0px 5px;
 }
-.view-more-btn {
+.no-background-btn {
     width: 180px;
     height: 50px;
     display: flex;
@@ -311,9 +319,200 @@ p{
     font-weight: bold;
     margin: 50px auto;
 }
-.view-more-btn:hover{
+.no-background-btn:hover{
     background-color: #A01230;
     color: #fff;
+}
+
+.pss-content .owl-prev{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50px;
+    height: max-content;
+    margin: auto !important;
+}
+.pss-content .owl-next{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -50px;
+    height: max-content;
+    margin: auto !important;
+}
+.pss-content .owl-nav button span{
+    font-size: 22px;
+    border: 1px solid #A01230;
+    color: #A01230;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+.pss-content .owl-nav button:hover span{
+    background-color: #A01230;
+    color: #fff;
+}
+
+
+/* About Electrician Prep USA ( AEP ) */
+.aep-section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: overlay;
+    color: #fff;
+    z-index: -1;
+}
+.aep-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 50px;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.aep-content {
+    max-width: 1000px;
+    z-index: 1;
+}
+
+section.sps-section:nth-child(2) {
+    padding-top: 100px;
+}
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.site-footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url('../img/footer-background.png');
+    background-size: cover;
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+.col-35 {
+    width: 30%;
+}
+.item-1 p {
+    max-width: 400px;
+    padding: 10px 0px;
+    line-height: 25px;
+}
+.col-15 {
+    width: 10%;
+}
+.item-2,
+.item-3,
+.item-4{
+    padding-top: 30px;
+}
+.item-4{
+    max-width: 400px;
+}
+.footer-form input[type='email']{
+    width: 100%;
+    padding: 15px 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+}
+.footer-form input::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.footer-row a,
+.footer-row{
+    color: #fff;
+}
+.footer-contact-link a {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+.footer-contact-link a img{
+    margin-right: 10px;
+}
+.footer-shop-menu li,
+.footer-quick-menu li {
+    padding: 8px 0px;
+}
+.footer-shop-menu,
+.footer-quick-menu {
+    padding-top: 10px;
+}
+.footer-form{
+    padding-top: 20px;
+}
+.footer-form input[type="submit"] {
+    width: 180px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #fff;
+    color: #A01230;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+
+/* Copyright */
+.copyright {
+    height: 50px;
+    background-color: #560000;
+    color: #fff;
+}
+
+.copyright-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.copyright-content ul {
+    display: flex;
+}
+.copyright-content ul li{
+    margin-right: 10px;
+}
+.copyright-content ul li:last-child{
+    margin-right: 0px;
+}
+.copyright-content li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+}
+.copyright-content li a:hover{
+    color: #560000;
+    background-color: #fff;
+}
+.copyright-content p{
+    font-size: 12px;
 }
 
 
@@ -327,5 +526,198 @@ p{
 @media(min-width:1900px){
     .container{
         max-width: 1680px;
+    }
+}
+
+@media(max-width:1600px){
+    .hpb-content {
+        max-width: 750px;
+    }
+    .col-15 {
+        width: 13%;
+    }
+}
+
+
+
+@media(max-width:1024px){
+    .site-menu ul li a{
+        font-size: 14px;
+    }
+    .pss-product-info h6 a{
+        font-size: 16px;
+    }
+    .aep-content {
+        max-width: 600px;
+    }
+    .footer-form input[type='email']{
+        width: 200px;
+    }
+    .footer-form input[type="submit"]{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width:991px){
+    h1{
+        font-size: 36px;
+    }
+    h3{
+        font-size: 26px;
+    }
+
+
+    .site-menu ul li a{
+        font-size: 12px;
+    }
+    .site-menu ul li{
+        margin-right: 15px;
+    }
+    .sps-section{
+        padding:50px 0px;
+    }
+    .sps-content{
+        flex-flow: row wrap;
+    }
+    .sps-img{
+        width: 100%;
+        max-width: 400px;
+    }
+    .sps-info{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .second-sps .sps-content {
+        flex-direction: column-reverse;
+    }
+
+
+    .footer-row{
+        flex-flow: row wrap;
+    }
+    .col-35{
+        width: 100%;
+    }
+    .col-15{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:767px){
+    h1{
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
+
+
+    .topBar{
+        height: 60px;
+    }
+    .topBar-content{
+        height: 60px;
+    }
+    .topBar-contact-link{
+        align-items: start;
+        flex-direction: column;
+    }
+    .topBar-contact-link li:first-child{
+        margin-bottom: 5px;
+    }
+    .topBar-contact-link img{
+        width: 15px;
+        height: 15px;
+    }
+    .topBar-contact-link a{
+        font-size: 12px;
+    }
+    .site-logo img {
+        width: 70px;
+    }
+
+
+    .nav-toggler{
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 20px;
+        right: 20px;
+        top: 90px;
+        margin: auto;
+    }
+    .nav-toggler span {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        transition: 0.4s;
+    }
+    .nav-toggler span:nth-child(2) {
+        bottom: 0;
+    }
+    .nav-toggler span:nth-child(3) {
+        margin: auto;
+        top: 0;
+        bottom: 0;
+    }
+    .site-menu nav{
+        display: none;
+    }
+
+    .hpb-section{
+        height: 600px;
+    }
+    .hbp-buttons{
+        max-width:320px; 
+    }
+    .hbp-learn-btn{
+        width: 150px;
+        height: 40px;
+    }
+    .hbp-shop-btn{
+        width: 150px;
+        height: 40px;
+    }
+
+    .sps-img{
+        max-width: 250px;
+    }
+
+
+    .aep-section{
+        height: 500px;
+    }
+    .aep-section::before{
+        margin: 15px;
+    }
+    .aep-content{
+        max-width: 320px;
+    }
+    .red-shop-btn{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .no-background-btn{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+
+    .footer-contact-link a{
+        font-size: 14px;
+    }
+    .footer-row a{
+        font-size: 14px;
     }
 }
