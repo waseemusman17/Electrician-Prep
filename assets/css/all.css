@@ -1,7 +1,8 @@
-/* @font-face {
-    font-family: 'Inter-Regular';
-    src: url('../fonts/Inter-Regular.ttf');
-} */
+@font-face {
+    font-family: 'Sarabun', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap');
+}
+
 
 
 
@@ -13,6 +14,7 @@ ol
   padding: 0px;
   list-style: none;
   outline: none;
+  font-family: 'Sarabun', sans-serif;
 }
 *:focus{
     outline: none !important;
@@ -20,6 +22,7 @@ ol
 a{
     text-decoration: none;
     transition: 0.5s all;
+    font-family: 'Sarabun', sans-serif;
 }
 a:hover{
     text-decoration: none;
@@ -29,19 +32,19 @@ h1{
     font-size: 46px;
 }
 h2{
-    font-size: 30px;
-}
-h3{
     font-size: 36px;
 }
-h4{
+h3{
     font-size: 30px;
 }
+h4{
+    font-size: 28px;
+}
 h5{
-    font-size: 24px;
+    font-size: 21px;
 }
 h6{
-    font-size: 21px;
+    font-size: 18px;
 }
 
 h1,
@@ -53,6 +56,7 @@ h5,h6{
 }
 p{
     font-size: 16px;    
+    font-family: 'Sarabun', sans-serif;
 }
 
 .container{
@@ -141,8 +145,187 @@ p{
     color: #fff;
 }
 
+
 /*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        Media Query
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Home Page 
+    Home Page Main Banner (HPB)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
+
+
+.hpb-section {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.scrollDiv{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.hpb-content {
+    max-width: 680px;
+}
+.hbp-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 380px;
+    margin: auto;
+}
+.hbp-learn-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background-color: #560000;
+    color: #fff;
+    border: 1px solid #560000;
+}
+.hbp-learn-btn:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.hbp-shop-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background-color: #fff;
+    color: #560000;
+    border: 1px solid #fff;
+}
+.hbp-shop-btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+
+/* Single Product Section (SPS) */
+.sps-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+.sps-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sps-img {
+    width: 40%;
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+}
+.sps-img::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -130px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/before-1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.sps-img img {
+    width: 100%;
+    object-fit: contain;
+}
+.sps-info {
+    width: 50%;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+.sps-info h3{
+    text-transform: uppercase;
+}
+.red-shop-btn {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A01230;
+    color: #fff;
+    margin: 40px auto;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* Product Slider Section (PSS) */
+
+.pss-section{
+    width: 100%;
+}
+.pss-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pss-product-info {
+    text-align: center;
+    max-width: 370px;
+    margin: auto;
+    padding-top: 20px;
+}
+.pss-product-info h6 a {
+    color: #A01230;
+}
+.pss-product-info p {
+    color: #A01230;
+    font-weight: bold;
+}
+.pss-product-info p span {
+    text-decoration: line-through;
+    color: #B1AFAF;
+    padding: 0px 5px;
+}
+.view-more-btn {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A01230;
+    color: #A01230;
+    font-weight: bold;
+    margin: 50px auto;
+}
+.view-more-btn:hover{
+    background-color: #A01230;
+    color: #fff;
+}
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Media Query
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+@media(min-width:1900px){
+    .container{
+        max-width: 1680px;
+    }
+}
